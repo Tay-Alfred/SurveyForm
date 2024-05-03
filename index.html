@@ -14,75 +14,81 @@
 <body>
     <main>
         <div class="row">
-        <div class="col">
-            <div class="flex-container" id="surveyBox">
-                <div class="form-group">
-                    <form id="survey-form">
-                        <label for="name" id="name-label">
-                            <input id="name" type="text" placeholder="Dan Givens" required>Name</input>
-                        </label>
+            <div class="col">
+                <div class="flex-container" id="surveyBox">
+                    <div class="form-group">
+                        <form id="survey-form">
+                            <label for="name" id="name-label">
+                                <input id="name" type="text" placeholder="Dan Givens" required>Name</input>
+                            </label>
+                    </div>
+                    <div class="form-group">
                         <label for="email" id="email-label">
                             <input id="email" type="email" placeholder="dgivens@hotmail.net" required>Email</input>
                         </label>
+                    </div>
+                    <div class="form-group">
                         <label for="number" id="number-label">
                             <input id="number" type="number" min="1" max="9999999999"
                                 placeholder="(958)555-0235">Number</input>
                         </label>
+                    </div>
+
+                    <!-- options dropdown -->
+                    <div class="form-group">
+                        <select id="dropdown">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                        </select>
+                    </div>
+                    <!-- radio buttons -->
+                    <div class="form-group">
+                        <fieldset id="radioButtons">
+                            <legend id="radioQuestion">What's the point?</legend>
+                            <input type="radio" name="radioButton" id="radioButton1">
+                            <label for="radioButton1">
+                                Button 1
+                            </label>
+                            <input type="radio" name="radioButton" id="radioButton2">
+                            <label for="radioButton2">
+                                Button 2
+                            </label>
+                            <input type="radio" name="radioButton" id="radioButton3">
+                            <label for="radioButton3">
+                                Button 3
+                            </label>
+                        </fieldset>
+                    </div>
+                    <!-- checkboxes -->
+                    <div class="form-group">
+                        <fieldset id="checkBoxes">
+                            <legend id="checkBoxQuestion">Hey Whadda Ya Know?</legend>
+                            <input type="checkbox" value="exampleCheck1" id="exampleCheck1">
+                            <label for="exampleCheck1">Check 1</label>
+                            <input type="checkbox" value="exampleCheck2" id="exampleCheck2">
+                            <label for="exampleCheck2">Check 2</label>
+                            <input type="checkbox" value="exampleCheck3" id="exampleCheck3">
+                            <label for="exampleCheck3">Check 3</label>
+                            <input type="checkbox" value="exampleCheck4" id="exampleCheck4">
+                            <label for="exampleCheck4">Check 4</label>
+                            <input type="checkbox" value="exampleCheck5" id="exampleCheck5">
+                            <label for="exampleCheck5">Check 5</label>
+                            <input type="checkbox" value="exampleCheck6" id="exampleCheck6">
+                            <label for="exampleCheck6">Check 6</label>
+                        </fieldset>
+                    </div>
+                    <!-- text field -->
+                    <div class="form-group">
+                        <label for="textArea">Enter your message:</label><br>
+                        <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
+                    </div>
+                    <!-- submit button -->
+                    <button id="submit">Submit</button>
+                    </form>
                 </div>
-                <!-- options dropdown -->
-                <div class="form-group">
-                    <select id="dropdown">
-                        <option value="option1">Option 1</option>
-                        <option value="option2">Option 2</option>
-                    </select>
-                </div>
-                <!-- radio buttons -->
-                <div class="form-group">
-                    <fieldset id="radioButtons">
-                        <legend id="radioQuestion">What's the point?</legend>
-                        <input type="radio" name="radioButton" id="radioButton1">
-                        <label for="radioButton1">
-                            Button 1
-                        </label>
-                        <input type="radio" name="radioButton" id="radioButton2">
-                        <label for="radioButton2">
-                            Button 2
-                        </label>
-                        <input type="radio" name="radioButton" id="radioButton3">
-                        <label for="radioButton3">
-                            Button 3
-                        </label>
-                    </fieldset>
-                </div>
-                <!-- checkboxes -->
-                <div class="form-group">
-                    <fieldset id="checkBoxes">
-                        <legend id="checkBoxQuestion">Hey Whadda Ya Know?</legend>
-                        <input type="checkbox" value="exampleCheck1" id="exampleCheck1">
-                        <label for="exampleCheck1">Check 1</label>
-                        <input type="checkbox" value="exampleCheck2" id="exampleCheck2">
-                        <label for="exampleCheck2">Check 2</label>
-                        <input type="checkbox" value="exampleCheck3" id="exampleCheck3">
-                        <label for="exampleCheck3">Check 3</label>
-                        <input type="checkbox" value="exampleCheck4" id="exampleCheck4">
-                        <label for="exampleCheck4">Check 4</label>
-                        <input type="checkbox" value="exampleCheck5" id="exampleCheck5">
-                        <label for="exampleCheck5">Check 5</label>
-                        <input type="checkbox" value="exampleCheck6" id="exampleCheck6">
-                        <label for="exampleCheck6">Check 6</label>
-                    </fieldset>
-                </div>
-                <!-- text field -->
-                <div class="form-group">
-                    <label for="textArea">Enter your message:</label><br>
-                    <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
-                </div>
-                <!-- submit button -->
-                <button id="submit">Submit</button>
-                </form>
             </div>
         </div>
-    </div>
+        </div>
     </main>
 </body>
 
