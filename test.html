@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Input Boxes</title>
+    <style>
+        /* Style for all input boxes */
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+        }
+
+        /* Additional styles for specific input types or IDs/classes */
+        /* Example: Styling input with class "search" */
+        .search {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        /* Example: Styling input with id "username" */
+        #username {
+            background-color: #f9f9f9;
+        }
+
+        /* Example: Styling input with type "submit" */
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Example: Styling input with type "checkbox" */
+        input[type="checkbox"] {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder="Enter your name">
+    <br>
+    <input type="text" class="search" placeholder="Search">
+    <br>
+    <input type="text" id="username" placeholder="Username">
+    <br>
+    <input type="password" placeholder="Password">
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox"> Remember me</label>
+
+</body>
+</html>

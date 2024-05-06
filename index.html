@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
 
     <title>Document</title>
+    <div id="titleBox">
     <h1 id="title"> Survey Form</h1>
     <p id="description">Lorem Ipsum Description Ask ChatGPT</p>
+    </div>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
     <main>
         <div class="row">
             <div class="col">
@@ -19,43 +22,52 @@
                     <div class="form-group">
                         <form id="survey-form">
                             <label for="name" id="name-label">
-                                <input id="name" type="text" placeholder="Dan Givens" required>Name</input>
+                                <input id="name" type="text" placeholder="Mikaela Reid" required>Name</input>
                             </label>
                     </div>
                     <div class="form-group">
-                        <label for="email" id="email-label">
-                            <input id="email" type="email" placeholder="dgivens@hotmail.net" required>Email</input>
+                        <label for="email" id="email-label"><span id="emailText">E-mail</span>
+                            <section></section>
+                            <input id="email" type="email" placeholder="sable.ward@hotmail.net" required></input>
                         </label>
                     </div>
                     <div class="form-group">
-                        <label for="number" id="number-label">
+                        <label for="number" id="number-label"><span >Number</span>
+                            <section></section>
                             <input id="number" type="number" min="1" max="9999999999"
-                                placeholder="(958)555-0235">Number</input>
+                                placeholder="(958)555-0235"></input>
                         </label>
                     </div>
 
                     <!-- options dropdown -->
                     <div class="form-group">
+                        <fieldset>
+                            <legend>What system do you use mainly?</legend>
                         <select id="dropdown">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
+                            <option value="exampleOption">Please choose...</option>
+                            <option value="option1">PlayStation</option>
+                            <option value="option2">Xbox</option>
+                            <option value="option3">Steam</option>
+                            <option value="option4">Nintendo Switch</option>
+                            <option value="option5">Mobile</option>
                         </select>
+                    </fieldset>
                     </div>
                     <!-- radio buttons -->
                     <div class="form-group">
                         <fieldset id="radioButtons">
-                            <legend id="radioQuestion">What's the point?</legend>
+                            <legend id="radioQuestion">Survivor or Killer Main?</legend>
                             <input type="radio" name="radioButton" id="radioButton1">
                             <label for="radioButton1">
-                                Button 1
+                                Survivor
                             </label>
                             <input type="radio" name="radioButton" id="radioButton2">
                             <label for="radioButton2">
-                                Button 2
+                                Killer
                             </label>
                             <input type="radio" name="radioButton" id="radioButton3">
                             <label for="radioButton3">
-                                Button 3
+                                I dabble in both
                             </label>
                         </fieldset>
                     </div>
@@ -79,7 +91,7 @@
                     </div>
                     <!-- text field -->
                     <div class="form-group">
-                        <label for="textArea">Enter your message:</label><br>
+                        <label for="textArea" id="inputMessage">Enter your message:</label><br>
                         <textarea id="textArea" name="textArea" rows="4" cols="50"></textarea>
                     </div>
                     <!-- submit button -->

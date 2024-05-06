@@ -1,17 +1,93 @@
 body{
-    background-color:#E8E8E8
+    background-image: url(images/dbd-backgroundpg.jfif);
+    background-size:cover;
+    background-position:center;
+    background-color:#E8E8E8;
   }
+#titleBox{
+    border: 5px solid #FF6600 ;
+    background-image:linear-gradient(#666666,#000000 );
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;
+    margin-top: 70px;
+
+}
 #surveyBox{
-    border: 5px solid #ffff;
+    border: 5px solid #FF6600 ;
     max-width: 600px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 5px;
-    background-color: #DAC4FF;
+    background-image:linear-gradient(#666666,#000000 );
 }
 fieldset{
-    border-color:#ffff;
+    border-color:#FF6600 ;
 }
 #submit{
     background-color: #FFEAD4;
+}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+#title{
+    text-align: center;
+    color: #fd934d ;
+    text-shadow: 3px 2px 3px #660033 ;
+}
+#description{
+    text-align: center;
+    color: #FF6600 ;
+    text-shadow: 3px 2px 4px #660033 ;
+    font-size: 22px;
+}
+select{
+    width: 575px;
+    height: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:  #fd934d;
+}
+#number{
+    background-color:#fd934d;
+    color: #000000;
+    border: 1px solid #fd934d;
+    margin-bottom: 10px;
+    width: 550px;
+
+}
+#email{
+    background-color:#fd934d;
+    border: 1px solid #fd934d;
+    margin-bottom: 20px;
+    width: 550px;
+}
+#name{
+    background-color: #fd934d;
+    border: 1px solid #fd934d;
+    margin-bottom: 20px;
+    width: 500px;
+    
+}
+#textArea{
+    background-color: #fd934d;
+    border: 1px solid #fd934d;
+    width: 500px;
+    
+}
+legend{
+    background-image: linear-gradient(to right, #ff0000, #00ff00); /* Define the gradient direction and colors */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
+}
+#inputMessage{
+    background-image: linear-gradient(to right, #ff0000, #00ff00); /* Define the gradient direction and colors */
+    -webkit-background-clip: text; /* Clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
 }
